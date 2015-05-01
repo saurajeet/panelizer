@@ -12,6 +12,7 @@ Setup
 Clone the github repository
 
 Run bundler to configure sources
+
     $ bundle install
     Fetching gem metadata from https://rubygems.org/...........
     Resolving dependencies...
