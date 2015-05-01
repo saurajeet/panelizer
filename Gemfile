@@ -1,4 +1,4 @@
-source 'rubygems.org'
+source 'https://rubygems.org'
 
-gem rails
-gem sqlite3
+gem 'rails', '~> 3.0.0'
+gem 'sqlite3', '~> 1.3.10'
