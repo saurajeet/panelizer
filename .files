@@ -48,4 +48,28 @@ $ rails generate scaffold jobdescription name:string description:string base_pre
       invoke  css
    identical    app/assets/stylesheets/scaffold.css
 
-
+$ rails generate scaffold schedules name:string email:string panelist:string on:datetime job:string
+Plural version of the model detected, using singularized version. Override with --force-plural.
+      invoke  active_record
+      create    db/migrate/20150504184348_create_schedules.rb
+      create    app/models/schedule.rb
+      invoke  resource_route
+       route    resources :schedules
+      invoke  scaffold_controller
+      create    app/controllers/schedules_controller.rb
+      invoke    erb
+      create      app/views/schedules
+      create      app/views/schedules/index.html.erb
+      create      app/views/schedules/edit.html.erb
+      create      app/views/schedules/show.html.erb
+      create      app/views/schedules/new.html.erb
+      create      app/views/schedules/_form.html.erb
+      invoke    helper
+      create      app/helpers/schedules_helper.rb
+      invoke  assets
+      invoke    js
+      create      app/assets/javascripts/schedules.js
+      invoke    css
+      create      app/assets/stylesheets/schedules.css
+      invoke  css
+   identical    app/assets/stylesheets/scaffold.css
