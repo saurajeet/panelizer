@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150504153910) do
+ActiveRecord::Schema.define(version: 20150504185439) do
 
   create_table "jobdescriptions", force: true do |t|
     t.string   "name"
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(version: 20150504153910) do
   create_table "panelists", force: true do |t|
     t.string   "name"
     t.string   "mail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "schedules", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "panelist"
+    t.datetime "on"
+    t.string   "job"
+    t.string   "jdlink"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

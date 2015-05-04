@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @schedule.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @schedule.email %>
+</p>
+
+<p>
+  <strong>Panelist:</strong>
+  <%= @schedule.panelist %>
+</p>
+
+<p>
+  <strong>On:</strong>
+  <%= @schedule.on %>
+</p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @schedule.job %>
+</p>
+
+<p>
+  <strong>Jdlink:</strong>
+  <%= @schedule.jdlink %>
+</p>
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>
