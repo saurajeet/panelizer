@@ -1,0 +1,51 @@
+$ rails generate scaffold panelist name:string mail:string 
+      invoke  active_record
+      create    db/migrate/20150501042645_create_panelists.rb
+      create    app/models/panelist.rb
+      invoke  resource_route
+       route    resources :panelists
+      invoke  scaffold_controller
+      create    app/controllers/panelists_controller.rb
+      invoke    erb
+      create      app/views/panelists
+      create      app/views/panelists/index.html.erb
+      create      app/views/panelists/edit.html.erb
+      create      app/views/panelists/show.html.erb
+      create      app/views/panelists/new.html.erb
+      create      app/views/panelists/_form.html.erb
+      invoke    helper
+      create      app/helpers/panelists_helper.rb
+      invoke  assets
+      invoke    js
+      create      app/assets/javascripts/panelists.js
+      invoke    css
+      create      app/assets/stylesheets/panelists.css
+      invoke  css
+      create    app/assets/stylesheets/scaffold.css
+
+$ rails generate scaffold jobdescription name:string description:string base_prefix:string
+      invoke  active_record
+      create    db/migrate/20150504153910_create_jobdescriptions.rb
+      create    app/models/jobdescription.rb
+      invoke  resource_route
+       route    resources :jobdescriptions
+      invoke  scaffold_controller
+      create    app/controllers/jobdescriptions_controller.rb
+      invoke    erb
+      create      app/views/jobdescriptions
+      create      app/views/jobdescriptions/index.html.erb
+      create      app/views/jobdescriptions/edit.html.erb
+      create      app/views/jobdescriptions/show.html.erb
+      create      app/views/jobdescriptions/new.html.erb
+      create      app/views/jobdescriptions/_form.html.erb
+      invoke    helper
+      create      app/helpers/jobdescriptions_helper.rb
+      invoke  assets
+      invoke    js
+      create      app/assets/javascripts/jobdescriptions.js
+      invoke    css
+      create      app/assets/stylesheets/jobdescriptions.css
+      invoke  css
+   identical    app/assets/stylesheets/scaffold.css
+
+

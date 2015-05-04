@@ -1,0 +1,29 @@
+<h1>Listing panelists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mail</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @panelists.each do |panelist| %>
+      <tr>
+        <td><%= panelist.name %></td>
+        <td><%= panelist.mail %></td>
+        <td><%= link_to 'Show', panelist %></td>
+        <td><%= link_to 'Edit', edit_panelist_path(panelist) %></td>
+        <td><%= link_to 'Destroy', panelist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Panelist', new_panelist_path %>

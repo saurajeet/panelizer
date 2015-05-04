@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @jobdescription.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @jobdescription.description %>
+</p>
+
+<p>
+  <strong>Base prefix:</strong>
+  <%= @jobdescription.base_prefix %>
+</p>
+
+<%= link_to 'Edit', edit_jobdescription_path(@jobdescription) %> |
+<%= link_to 'Back', jobdescriptions_path %>

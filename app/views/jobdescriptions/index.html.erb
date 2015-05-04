@@ -1,0 +1,31 @@
+<h1>Listing jobdescriptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Base prefix</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jobdescriptions.each do |jobdescription| %>
+      <tr>
+        <td><%= jobdescription.name %></td>
+        <td><%= jobdescription.description %></td>
+        <td><%= jobdescription.base_prefix %></td>
+        <td><%= link_to 'Show', jobdescription %></td>
+        <td><%= link_to 'Edit', edit_jobdescription_path(jobdescription) %></td>
+        <td><%= link_to 'Destroy', jobdescription, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jobdescription', new_jobdescription_path %>
