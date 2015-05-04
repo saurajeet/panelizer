@@ -1,6 +1,4 @@
 Panelizer::Application.routes.draw do
-  resources :schedules
-
   resources :jobdescriptions
 
   resources :panelists
